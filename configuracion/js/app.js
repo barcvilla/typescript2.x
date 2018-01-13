@@ -41,4 +41,43 @@ var numero = 42; // definimos var num
 function example(name, age) {
     return 42;
 }
-console.log(example("hi", 35));
+// 4. Primitive Types
+/**
+ * number datatype contiene doble precision
+ * 64 bit floating point value.
+ */
+function numberTypeDemo() {
+    var num = 42;
+    var decimal = 42.0;
+}
+/**
+ * string : Dato UTF-16. Se asigna con ' o ""
+ */
+function stringTypeDemo() {
+    var firstName = 'John';
+    var templateHtml = "<h1>Titulo</h1>";
+    // string con expresiones agregadas
+    var news = "ESPN";
+    var count = 10;
+    var result = 'Top ' + count + ' news feed from ' + news;
+    console.log(result);
+}
+/**
+ * boolean
+ */
+function booleanTypeDemo() {
+    var hasvalues = false;
+}
+/**
+ * arrays
+ */
+function arrayTypeDemo() {
+    var score = [10, 20, 30, 40];
+    console.log(score[0]);
+}
+function main() {
+    console.log(example("hi", 35));
+    stringTypeDemo();
+    arrayTypeDemo();
+}
+main();
