@@ -75,9 +75,19 @@ function arrayTypeDemo() {
     var score = [10, 20, 30, 40];
     console.log(score[0]);
 }
+function tuplesDemo() {
+    var details;
+    details = ['John', 42];
+    console.log('Using tuples: ' + details);
+}
+function voidFunctionDemo(num) {
+    console.log('using void function: ' + num);
+}
 function main() {
     console.log(example("hi", 35));
     stringTypeDemo();
     arrayTypeDemo();
+    tuplesDemo();
+    voidFunctionDemo(6);
 }
 main();

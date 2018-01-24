@@ -90,11 +90,25 @@ function arrayTypeDemo()
     console.log(score[0]);
 }
 
+function tuplesDemo()
+{
+    let details:[string, number];
+    details = ['John', 42];
+    console.log('Using tuples: ' + details);
+}
+
+function voidFunctionDemo(num : number):void
+{
+    console.log('using void function: ' + num);
+}
+
 function main()
 {
     console.log(example("hi", 35));
     stringTypeDemo();
     arrayTypeDemo();
+    tuplesDemo();
+    voidFunctionDemo(6);
 }
 
 main();
