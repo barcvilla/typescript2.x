@@ -102,6 +102,26 @@ function voidFunctionDemo(num : number):void
     console.log('using void function: ' + num);
 }
 
+/*
+* null and undefined pueden ase asignados a cualquier
+* variable.
+*/
+function nullAndUndefinedDemo()
+{
+    let value = null;
+    value = 42;
+}
+
+function unionTypesDemo()
+{
+    // Union Type permite definir una variable con
+    // multiples tipos
+    let data : string | number;
+    data = 10;
+    data = "John";
+    console.log("using Union Types " + data);
+}
+
 function main()
 {
     console.log(example("hi", 35));
@@ -109,6 +129,7 @@ function main()
     arrayTypeDemo();
     tuplesDemo();
     voidFunctionDemo(6);
+    unionTypesDemo();
 }
 
 main();
