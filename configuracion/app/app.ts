@@ -122,6 +122,31 @@ function unionTypesDemo()
     console.log("using Union Types " + data);
 }
 
+/**
+ * Definicion de Clases
+ */
+class News
+{
+    // members
+    public channelNumber : number = 0;
+    public newsTitle: string = "";
+    private author : string = "ESPN";
+    toString():string
+    {
+        return `${this.channelNumber}:
+        ${this.newsTitle} was written by
+        ${this.author}`;
+    }
+}
+
+function createNewsObject()
+{
+    let espn = new News();
+    espn.channelNumber = 1;
+    espn.newsTitle = 'NFL Today';
+    console.log(espn.toString());
+}
+
 function main()
 {
     console.log(example("hi", 35));
@@ -130,6 +155,7 @@ function main()
     tuplesDemo();
     voidFunctionDemo(6);
     unionTypesDemo();
+    createNewsObject();
 }
 
 main();

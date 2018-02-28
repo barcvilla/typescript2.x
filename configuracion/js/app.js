@@ -99,6 +99,27 @@ function unionTypesDemo() {
     data = "John";
     console.log("using Union Types " + data);
 }
+/**
+ * Definicion de Clases
+ */
+var News = /** @class */ (function () {
+    function News() {
+        // members
+        this.channelNumber = 0;
+        this.newsTitle = "";
+        this.author = "ESPN";
+    }
+    News.prototype.toString = function () {
+        return this.channelNumber + ":\n        " + this.newsTitle + " was written by\n        " + this.author;
+    };
+    return News;
+}());
+function createNewsObject() {
+    var espn = new News();
+    espn.channelNumber = 1;
+    espn.newsTitle = 'NFL Today';
+    console.log(espn.toString());
+}
 function main() {
     console.log(example("hi", 35));
     stringTypeDemo();
@@ -106,5 +127,6 @@ function main() {
     tuplesDemo();
     voidFunctionDemo(6);
     unionTypesDemo();
+    createNewsObject();
 }
 main();
