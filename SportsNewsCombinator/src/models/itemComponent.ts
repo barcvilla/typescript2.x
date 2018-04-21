@@ -1,4 +1,4 @@
-export class itemComponet
+export class itemComponent
 {
   item : string;
   itemCount : number;
