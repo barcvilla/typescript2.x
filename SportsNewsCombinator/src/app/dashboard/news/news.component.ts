@@ -3,7 +3,7 @@ import {News} from '../../../models/news';
 import {Article} from '../../../models/article';
 
 @Component({
-  selector: 'app-news',
+  selector: 'snc-news',
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.css']
 })
