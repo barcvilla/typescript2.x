@@ -1,3 +1,4 @@
+/*Article Model*/
 export class Article
 {
   author : string;

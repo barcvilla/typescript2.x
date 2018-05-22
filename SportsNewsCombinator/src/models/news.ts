@@ -1,3 +1,5 @@
+/**News model */
+
 import { Article } from "./article";
 
 export class News
