@@ -1,5 +1,7 @@
+import { IArticle } from "./IArticle";
+
 /*Article Model*/
-export class Article
+export class Article implements IArticle
 {
   author : string;
   title : string;
@@ -7,4 +9,9 @@ export class Article
   url : string;
   urlToImage : string;
   publishedAt : string;
+
+  getFormattedDate():string
+  {
+    return "";
+  }
 }
