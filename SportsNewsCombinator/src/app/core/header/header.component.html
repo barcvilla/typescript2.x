@@ -1,0 +1,20 @@
+<!--Definimos nuestra barra de navegacion-->
+<nav class="navbar navbar-light" style="background-color:whitesmoke">
+  <a class="navbar-brand" href="#" style="padding: 10px">
+    <img src="assets/Logo.png" width="35" height="35" alt="">
+  </a>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Sports News Combinator</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <!--Routing es la manera de definir las reglas de navgacion. RouterLink define el URL que sera iniciado cuando el
+          usuario hace click en el link. Angular consigue el enrutamiento usando routingLink y enruta modulos definidos bajo
+          @angular/route-->
+      <li><a routerLink="/nfl" routerLinkActive="active" >NFL</a></li>
+      <li><a routerLink="/espn" routerLinkActive="active">ESPN</a></li>
+      <li><a routerLink="/fox" routerLinkActive="active">FOX</a></li>
+      <li><a routerLink="/bbc" routerLinkActive="active">BBC</a></li>
+    </ul>
+  </div>
+</nav>
