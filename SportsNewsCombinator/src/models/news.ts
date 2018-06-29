@@ -11,12 +11,12 @@ export class News
   constructor(public status:string, public source:string, public sortBy:string){}
 
   /**Getter and Setter */
-  get Article():IArticle[]
+  get Articles():IArticle[]
   {
     return this._article;
   }
 
-  set Article(value: IArticle[])
+  set Articles(value: IArticle[])
   {
     if(value.length > 0)
     {
